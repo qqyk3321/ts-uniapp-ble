@@ -5,6 +5,9 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   // 配置语言的文件关联
   "files.associations": {
     "pages.json": "jsonc", // pages.json 可以写注释
