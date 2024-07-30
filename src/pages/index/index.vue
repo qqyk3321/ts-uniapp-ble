@@ -1,14 +1,19 @@
 <script setup lang="ts">
-//
+import instance from '@/utils/acApis/achttps'
+import { ref } from 'vue'
+let res = ref({ key: 123 })
+const onClick = async () => {
+  console.log('确实点击了')
+  res.value = await instance.get('/onlinedeviceconnstatus')
+}
 </script>
 
 <template>
   <view class="index">index</view>
   <uni-card title="基础卡片">
-    <text>这是一个基础卡片示例，此示例展示了一个标题加标题额外信息的标准卡片。</text>
+    {{ res }}
   </uni-card>
+  <button @click="onClick">点击</button>
 </template>
 
-<style lang="scss">
-//
-</style>
+<style lang="scss"></style>

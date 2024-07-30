@@ -1,0 +1,110 @@
+
+
+# 步骤1 连接蓝牙
+
+<img src="蓝牙程序样式设计.assets/ad3d8ac092ccc25466a25127625339c.jpg" alt="ad3d8ac092ccc25466a25127625339c" style="zoom:20%;" /><img src="蓝牙程序样式设计.assets/27e9d39fcee2b493b501e930cd2dabb-1721104907114.jpg" alt="27e9d39fcee2b493b501e930cd2dabb" style="zoom:20%;" /><img src="蓝牙程序样式设计.assets/0fe47ad6974cc57d8a039dc977fb1b0.jpg" alt="0fe47ad6974cc57d8a039dc977fb1b0" style="zoom:20%;" /><img src="蓝牙程序样式设计.assets/6c07d540f4cd839a119d6bef6772b70-1721105033264.jpg" alt="6c07d540f4cd839a119d6bef6772b70" style="zoom:20%;" />
+
+
+
+基础颜色是蓝牙,, 高亮图标也是蓝色
+
+按键有点击效果,
+
+
+
+
+
+# 步骤2 连接设备与断开连接
+
+<img src="蓝牙程序样式设计.assets/80fb8de1e9fee9ef39120b19941c7a7.jpg" alt="80fb8de1e9fee9ef39120b19941c7a7" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/3789377a014299d9c2321ddeeee74d2.jpg" alt="3789377a014299d9c2321ddeeee74d2" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/4b02b711901a2448c140ced9155ce95.jpg" alt="4b02b711901a2448c140ced9155ce95" style="zoom:25%;" />
+
+
+
+上面需要从蓝牙部分获取信息,下拉可以刷新
+
+设备型号,设备编号,固件版本(server),
+
+时间信息,以太网信息,内核编译事件
+
+
+
+
+
+
+
+
+
+下面是主动点击断开操作
+
+<img src="蓝牙程序样式设计.assets/6ee0b746e3816ee06d6a3fc130a889e.jpg" alt="6ee0b746e3816ee06d6a3fc130a889e" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/1f0627031cdbc2b3fa22e423b2aabd7-1721105446871.jpg" alt="1f0627031cdbc2b3fa22e423b2aabd7" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/a60ac0f3f6692c4e3945842823d0901.jpg" alt="a60ac0f3f6692c4e3945842823d0901" style="zoom:25%;" />
+
+连接设备需要判断该设备是否为需要的设备,,,也就是服务id 是否满足需求,,,,,
+如果点击了不满足需求的设备,如下图
+
+
+
+<img src="蓝牙程序样式设计.assets/af19c50e9c682ab63863e9b584fc485.jpg" alt="af19c50e9c682ab63863e9b584fc485" style="zoom:25%;" />
+
+
+
+
+
+如果检测到断开如下
+
+<img src="蓝牙程序样式设计.assets/a60ac0f3f6692c4e3945842823d0901-1721105954926.jpg" alt="a60ac0f3f6692c4e3945842823d0901" style="zoom:25%;" />
+
+# 步骤3 查询空调信息
+
+空调信息总览
+
+<img src="蓝牙程序样式设计.assets/ae4ed054424a8bd80e243d5ddf46e8e.jpg" alt="ae4ed054424a8bd80e243d5ddf46e8e" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/efedf3314746acfeed31d484197d94d.jpg" alt="efedf3314746acfeed31d484197d94d" style="zoom:25%;" />
+
+
+
+
+
+查看单体通道,,以及添加过滤条件
+
+<img src="蓝牙程序样式设计.assets/731113880a6923267952de40d1a694e.jpg" alt="731113880a6923267952de40d1a694e" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/95e2bbb15d39cc466382664b38899c4.jpg" alt="95e2bbb15d39cc466382664b38899c4" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/eb8c81413b36f6aedf290286af9eb01.jpg" alt="eb8c81413b36f6aedf290286af9eb01" style="zoom:25%;" />
+
+
+
+
+
+选中以及设置
+
+<img src="蓝牙程序样式设计.assets/c2209e6129492af7b85fdb820e44437.jpg" alt="c2209e6129492af7b85fdb820e44437" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/d53694e48d676b775253d2c85d5170f.jpg" alt="d53694e48d676b775253d2c85d5170f" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/7bcbb72c83d31f9c3b0ba9106509c7e-1721108424100.jpg" alt="7bcbb72c83d31f9c3b0ba9106509c7e" style="zoom:25%;" />
+
+
+
+
+
+
+
+# 步骤4 设置698地址
+
+<img src="蓝牙程序样式设计.assets/0fc11aaf0803e8679b18d981b52fff8.jpg" alt="0fc11aaf0803e8679b18d981b52fff8" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/06968115f87cc96d517323e60901005.jpg" alt="06968115f87cc96d517323e60901005" style="zoom:25%;" />
+
+
+
+
+
+
+
+
+
+## 步骤5 空调通道批量设置
+
+<img src="蓝牙程序样式设计.assets/571e07ba79005bebfdd91b3dff286d2.jpg" alt="571e07ba79005bebfdd91b3dff286d2" style="zoom:20%;" /><img src="蓝牙程序样式设计.assets/ad44c15d7948eb5176ffdde48064e7c.jpg" alt="ad44c15d7948eb5176ffdde48064e7c" style="zoom:20%;" /><img src="蓝牙程序样式设计.assets/b29749f0a15af3378fcfb43b32a46f1-1721108652943.jpg" alt="b29749f0a15af3378fcfb43b32a46f1" style="zoom:20%;" /><img src="蓝牙程序样式设计.assets/image-20240716134434918.png" alt="image-20240716134434918" style="zoom:20%;" />
+
+
+
+# 步骤6 升级固件
+
+<img src="蓝牙程序样式设计.assets/d77f13dfd435811a49ca8f2ece4474a.jpg" alt="d77f13dfd435811a49ca8f2ece4474a" style="zoom:25%;" />
+
+# 步骤7 抓码
+
+ <img src="蓝牙程序样式设计.assets/dd390f19fedfd05fe7b355cb002cb96.jpg" alt="dd390f19fedfd05fe7b355cb002cb96" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/97ca01e19d782e7062c8e4f2c7e5140-1721108922258.jpg" alt="97ca01e19d782e7062c8e4f2c7e5140" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/8c962f5f192a5db5dd1dd975de29430.jpg" alt="8c962f5f192a5db5dd1dd975de29430" style="zoom:25%;" />
+
+<img src="蓝牙程序样式设计.assets/c8ab150bfe5d91bf1badd17d7cf7eb2.jpg" alt="c8ab150bfe5d91bf1badd17d7cf7eb2" style="zoom:25%;" /><img src="蓝牙程序样式设计.assets/094d6a572e20e1b2755878f74f982eb.jpg" alt="094d6a572e20e1b2755878f74f982eb" style="zoom:25%;" />
