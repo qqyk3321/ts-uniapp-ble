@@ -1,13 +1,19 @@
 import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
+import type { logItemInterface, filterItemType } from '@/types/log/logItem'
 
 export const useLogStore = defineStore('log', () => {
   const LogList = ref<logItemInterface[]>([])
-  const filterType = ref<logItemType>('BLE')
+  const filterType = ref<filterItemType>('ALL')
   const isAscending = ref(true)
 
   const showList = computed(() => {
-    const filtered = LogList.value.filter((logItem) => logItem.type === filterType.value)
+    let filtered = LogList.value
+    if (filterType.value === 'ALL') {
+      return isAscending.value ? filtered : filtered.slice().reverse()
+    }
+
+    filtered = filtered.filter((logItem) => logItem.type === filterType.value)
     return isAscending.value ? filtered : filtered.slice().reverse()
   })
 
@@ -35,3 +41,4 @@ export const useLogStore = defineStore('log', () => {
     toggleSortOrder,
   }
 })
+// export const logStore = useLogStore()

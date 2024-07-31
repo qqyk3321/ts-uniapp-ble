@@ -1,5 +1,5 @@
 // 接口定义
-interface logItemInterface {
+export interface logItemInterface {
   title: string
   type: logItemType
   value: object
@@ -9,7 +9,7 @@ interface logItemInterface {
   direction: logItemDirection
 }
 
-interface showLogItemInterface {
+export interface showLogItemInterface {
   color: string // 由 type 和 direction 推导的颜色
   levelColor: string // 日志级别的颜色
   indexColor: string // 常用于文本或背景
@@ -23,13 +23,15 @@ interface showLogItemInterface {
 }
 
 // 类型定义
-type logItemType = 'BLE' | 'SER' | 'SES'
-type logItemDirection = 'send' | 'receive'
-type logItemLevel = 'success' | 'failed'
+export type logItemType = 'BLE' | 'SER' | 'SES'
+export type filterItemType = logItemType | 'ALL'
+export type logItemDirection = 'send' | 'receive'
+export type logItemLevel = 'success' | 'failed'
 
-type logItemColorMapping = {
+export type logItemColorMapping = {
   [K in logItemType]: {
     receive: string
     send: string
   }
 }
+

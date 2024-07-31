@@ -5,4 +5,7 @@ const instance = axios.create({
   baseURL: 'https://qqyk.asia/punch',
   adapter: createUniAppAxiosAdapter(),
 })
+instance.interceptors.request.use((config) => {
+  return config
+})
 export default instance

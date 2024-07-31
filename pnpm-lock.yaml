@@ -65,6 +65,9 @@ importers:
       pinia-plugin-persistedstate:
         specifier: ^3.2.0
         version: 3.2.0(pinia@2.0.27(typescript@5.1.6)(vue@3.3.4))
+      pnpm:
+        specifier: ^9.6.0
+        version: 9.6.0
       vue:
         specifier: ^3.2.47
         version: 3.3.4
@@ -3366,6 +3369,11 @@ packages:
   pngjs@3.4.0:
     resolution: {integrity: sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==}
     engines: {node: '>=4.0.0'}
+
+  pnpm@9.6.0:
+    resolution: {integrity: sha512-ONxvuo26NbOTQLlwARLC/h4S8QsXE0cVpKqYzPe7A152/Zgc8Ls4TfqY+NavVIHCvvL0Jmokv6IMNOtxR84LXg==}
+    engines: {node: '>=18.12'}
+    hasBin: true
 
   postcss-import@14.1.0:
     resolution: {integrity: sha512-flwI+Vgm4SElObFVPpTIT7SU7R3qk2L7PyduMcokiaVKuWv9d/U+Gm/QAd8NDLuykTWTkcrjOeD2Pp1rMeBTGw==}
@@ -7984,7 +7992,7 @@ snapshots:
   jsdom@16.7.0:
     dependencies:
       abab: 2.0.6
-      acorn: 8.8.1
+      acorn: 8.12.1
       acorn-globals: 6.0.0
       cssom: 0.4.4
       cssstyle: 2.3.0
@@ -8405,6 +8413,8 @@ snapshots:
       find-up: 4.1.0
 
   pngjs@3.4.0: {}
+
+  pnpm@9.6.0: {}
 
   postcss-import@14.1.0(postcss@8.4.28):
     dependencies:
